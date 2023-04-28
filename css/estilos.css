@@ -1,0 +1,184 @@
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+   
+}
+
+#encabezado{
+    
+    text-align: center;
+}
+#encabezado h1{
+    font-size: 32px;
+    line-height: 3em;
+}
+
+#banner{
+    height: 7.5em;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#texto_banner p{
+    color: white;
+    padding: 40px 60px;                
+    font-size: 32px;                
+}
+#contenedor{
+    display: block;
+    text-align: center;
+    margin: 2em auto;
+
+}
+#contenedor_acciones{
+   /* background-color: darkgray;*/
+    display: inline-block;
+
+}
+#contenedor_texto_encriptado{
+   /* background-color: teal;*/
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2em;
+}
+.cuadro_texto{
+    height: 23.5em;
+}
+.cuadro_botones{
+    height: 6.25em;
+ 
+}
+.alerta .btn_cuadro_encriptador{
+    margin:0px auto;
+}
+.form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.txtarea_resultado {
+    box-shadow: 0 3px 0 0 #b7c3d1, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+    background-color: #E6EAEF;
+    background-image: linear-gradient(45deg, #FCFCFC, #C6D2FF);
+    color: #252730;
+
+    resize: none;
+    margin-top: 1em;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2em;
+    width: 15em;
+    height: 10em;
+                  
+}   
+.txtarea_ingreso {
+    box-shadow: 0 3px 0 0 #b7c3d1, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+    background-color: #E6EAEF;
+    background-image: linear-gradient(-45deg, #FCFCFC, #C6D2FF);
+    color: #252730;
+
+    resize: none;
+    margin-top: 1em;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2em;
+    width: 25em;
+    height: 10em;
+                  
+}   
+
+.textartxtarea_ingreso:hover{
+    box-shadow: 0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset;
+}
+main{
+    display: block;
+
+}
+footer{
+    
+    height: 10em;
+    background-color: black;
+    display: flex;
+}
+#pie{
+    margin: auto;
+    
+}
+#pie p{
+    color: white;
+    font-size: 2em;
+    text-align: center; 
+                   
+}
+
+#texto_oculto2 p{
+    color: red;
+    font-weight: bold;
+}
+#img_contenedor{
+    display: block;
+    
+}
+#indicaciones{
+    font-weight: bold;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.3em;
+}
+
+
+/* media screen --------------------------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .txtarea_ingreso, .txtarea_resultado{
+        width: auto;
+    }
+    #contenedor_texto_encriptado{
+        margin-left: 0;
+    }
+    
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1260px) {
+    .txtarea_ingreso, .txtarea_resultado{
+        width: 70%;
+    }
+    #contenedor_texto_encriptado{
+        margin-left: 0;
+    }
+    #contenedor_texto_encriptado, #contenedor_acciones{
+        display:block;
+    }
+
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+/* fin media screen --------------------------------------------- */
+
+

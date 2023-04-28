@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/botones_encriptador.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="shortcut icon" href="img/favicon.png">
+
+
+    </head>
+    <body>
+        <Main>
+            <div id="encabezado">
+                <h1>Alura Challenge #1</h1>
+            </div>
+
+            <div id="banner">
+                    <div id="texto_banner">
+                        <p>encriptador de texto_</p>
+                    </div>
+            </div>
+
+            <div id="contenedor">
+                <div id="contenedor_acciones">
+                    <div class="cuadro_texto">
+                        <form>
+                            <textarea class="txtarea_ingreso" placeholder="Ingrese el texto aqui..." id="encriptar"></textarea>
+                            
+                        </form>
+                    </div>
+                    <div class="cuadro_botones">
+                        <div class="alerta">
+                            <p id="indicaciones">El texto solo debe contener letras en minusculas sin acentos.</p>
+                        </div>
+                        <div class="btn_cuadro_encriptador">
+                            <button class="btn encriptar" onclick="encriptar()">Encriptar</button>
+                            <button class="btn desencriptar" onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="contenedor_texto_encriptado">
+                    <div id="img_contenedor"><img src="img/img-contenedor.png"></div>
+                    <div class="cuadro_texto" style="display: none;" id="oculto">
+                        <form>
+                            <textarea class="txtarea_resultado" id="resultado" readonly ></textarea>
+
+                        </form>
+                    </div>
+                    <div id="texto_oculto" style="display: none; font-weight: bold;">
+                        <p>El texto se ha copiado al portapapeles.</p>
+                    </div>
+                    <div id="texto_oculto2" style="display: none;">
+                        <p>No hay nada para copiar</p>
+                    </div>
+                    <div class="cuadro_botones" style="display: none;" id="oculto2">
+                        <button class="btn copiar" onclick="copiar_al_portapapeles()">Copiar al portapapeles</button>
+                    </div>
+                </div>
+            </div>
+        </Main>
+
+        <footer>
+            <div id="pie">
+                <p>Pagina en construccion</p>
+            </div>
+        </footer>
+
+
+        <script src="js/funciones.js"></script>
+
+    </body>
+</html>
