@@ -39,7 +39,8 @@ function encriptar(){
         }
 
         else{
-            text_area_ingreso.style.border = "3px solid red";
+            text_area_ingreso.style.border = "3px red solid";
+            text_area_ingreso.style.boxShadow = "0 3px 0 0 #e81d1d, 0 6px 4px -1px rgba(240, 6, 6, 0.3), 0 4px 16px rgba(241, 0, 0, 0.5), 0 1px 2px 1px rgba(196, 15, 15, 0) inset, 0 18px 32px -2px rgba(245, 16, 16, 0.14) inset";
             texto_indicaciones.style.color = "red";
             texto_indicaciones.style.fontSize = '1.3em';
             texto_indicaciones.style.fontWeight = "bold";
@@ -47,6 +48,10 @@ function encriptar(){
             document.getElementById("img_contenedor").style.display = "block";
             document.getElementById("oculto").style.display = "none";
             document.getElementById("oculto2").style.display = "none";
+
+            document.getElementById("texto_oculto").style.visibility = "hidden";
+            document.getElementById("texto_oculto").style.display = "block";
+            document.getElementById("texto_oculto2").style.display = "none";
            
             break;
         }
@@ -54,15 +59,18 @@ function encriptar(){
 
     if (letras !== ""){
 
-        text_area_ingreso.style.border = "1px solid white";
+        text_area_ingreso.style.border = "3px solid #ffffff";
+        text_area_ingreso.style.boxShadow = "0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset";
         texto_indicaciones.style.color = "black";
         texto_indicaciones.style.fontSize = '1.3em';
         texto_indicaciones.style.fontWeight = "bold";
 
         let textArea = document.getElementById("resultado");
         textArea.style.border = "";
-        document.getElementById("texto_oculto").style.display = "none";
-        document.getElementById("texto_oculto2").style.display = "none";
+        textArea.style.boxShadow = "0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset";
+
+        document.getElementById("texto_oculto").style.visibility = "hidden";
+        document.getElementById("texto_oculto2").style.visibility = "hidden";
         document.getElementById("img_contenedor").style.display = "none";
         document.getElementById("oculto").style.display = "block";
         document.getElementById("oculto2").style.display = "block";
@@ -122,27 +130,37 @@ function desencriptar(){
         else{
             text_area_ingreso.style.border = "3px solid red";
             texto_indicaciones.style.color = "red";
-            texto_indicaciones.style.fontSize = '1.2em';
+            text_area_ingreso.style.boxShadow = "0 3px 0 0 #e81d1d, 0 6px 4px -1px rgba(240, 6, 6, 0.3), 0 4px 16px rgba(241, 0, 0, 0.5), 0 1px 2px 1px rgba(196, 15, 15, 0) inset, 0 18px 32px -2px rgba(245, 16, 16, 0.14) inset";
+
+            texto_indicaciones.style.fontSize = '1.3em';
             texto_indicaciones.style.fontWeight = "bold";
             letras = "";
             document.getElementById("img_contenedor").style.display = "block";
             document.getElementById("oculto").style.display = "none";
             document.getElementById("oculto2").style.display = "none";
+
+            document.getElementById("texto_oculto").style.display = "none";
+            document.getElementById("texto_oculto2").style.display = "none";
+
             break;
         }
     }
 
     if (letras !== ""){
 
-        text_area_ingreso.style.border = "1px solid white";
+        text_area_ingreso.style.border = "3px solid #ffffff";
+        text_area_ingreso.style.boxShadow = "0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset";
+
         texto_indicaciones.style.color = "black";
         texto_indicaciones.style.fontSize = '1.3em';
         texto_indicaciones.style.fontWeight = "bold";
         
         let textArea = document.getElementById("resultado");
         textArea.style.border = "";
-        document.getElementById("texto_oculto").style.display = "none";
-        document.getElementById("texto_oculto2").style.display = "none";
+        textArea.style.boxShadow = "0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset";
+
+        document.getElementById("texto_oculto").style.visibility = "hidden";
+        document.getElementById("texto_oculto2").style.visibility = "hidden";
         document.getElementById("img_contenedor").style.display = "none";
         document.getElementById("oculto").style.display = "block";
         document.getElementById("oculto2").style.display = "block";
@@ -156,6 +174,11 @@ function copiar_al_portapapeles(){
     
     let textArea = document.getElementById("resultado");
     if (textArea.value == ""){
+        textArea.style.border = "3px red solid";
+        textArea.style.boxShadow = "0 3px 0 0 #e81d1d, 0 6px 4px -1px rgba(240, 6, 6, 0.3), 0 4px 16px rgba(241, 0, 0, 0.5), 0 1px 2px 1px rgba(196, 15, 15, 0) inset, 0 18px 32px -2px rgba(245, 16, 16, 0.14) inset";
+
+        document.getElementById("texto_oculto").style.visibility = "hidden";
+        document.getElementById("texto_oculto2").style.visibility = "visible";
         document.getElementById("texto_oculto").style.display = "none";
         document.getElementById("texto_oculto2").style.display = "block";
     }
@@ -163,7 +186,12 @@ function copiar_al_portapapeles(){
 
     textArea.select();
     document.execCommand("copy");
-    textArea.style.border = "3px solid #00cc00"
+
+    textArea.style.border = "3px solid #00cc00";
+    textArea.style.boxShadow = "0 3px 0 0 #01c20e, 0 6px 4px -1px rgba(0, 255, 68, 0.3), 0 4px 16px rgba(31, 188, 0, 0.5), 0 1px 2px 1px rgba(3, 246, 19, 0) inset, 0 18px 32px -2px rgba(16, 221, 1, 0.14) inset";
+
+    document.getElementById("texto_oculto").style.visibility = "visible";
+    document.getElementById("texto_oculto2").style.visibility = "hidden";
     document.getElementById("texto_oculto").style.display = "block";
     document.getElementById("texto_oculto2").style.display = "none";
     }

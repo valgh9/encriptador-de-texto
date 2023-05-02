@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
 
 img{
     max-width: 100%;
@@ -5,29 +7,78 @@ img{
 
 body{
     font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
-   
-}
-
-#encabezado{
-    
-    text-align: center;
-}
-#encabezado h1{
-    font-size: 32px;
-    line-height: 3em;
-}
-
-#banner{
-    height: 7.5em;
-    background-image: url('../img/bg.jpg');
+    background-image: url("../img/bg-body.png");
     background-size: cover;                      
     background-repeat: no-repeat;
     background-position: center center;
+    color: #252730;
+}
+
+#encabezado{
+    text-align: center;
+    background: rgb(238,238,238);
+    background: radial-gradient(circle, rgba(238,238,238,1) 40%, rgba(190,190,190,1) 100%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    line-height: 2.5em;
+    font-weight: bolder;
+    
+
+}
+
+.txt-img{
+    background-image: url("../img/banner.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 3px;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+
+#banner{
+    height: 7.5em;
+    background-image: url('../img/banner.jpg');
+    /*background-size: cover; */                     
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;;
+
+    box-shadow: 0px 10px 19px -7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 10px 19px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 19px -7px rgba(0,0,0,0.5);
+    
+    
+}
+#texto_banner{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(238,238,238,0) 100%);
+    height: 7.5em;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 #texto_banner p{
     color: white;
     padding: 40px 60px;                
-    font-size: 32px;                
+    font-size: 2em;  
+    font-family: 'Roboto Mono', monospace;
+    font-weight:bolder;
+    text-shadow: 0px 1px 4px rgba(255, 255, 255, 1);  
+    
+    
+    align-self: center;
+  width: 33%;
+  text-align: center;
+  
+
 }
 #contenedor{
     display: block;
@@ -62,17 +113,29 @@ body{
     padding: 10px 25px;
     width: 50%;
 }
+
+
 .txtarea_resultado {
-    box-shadow: 0 3px 0 0 #b7c3d1, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+   /* box-shadow: 0 3px 0 0 #b7c3d1, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
     background-color: #E6EAEF;
     background-image: linear-gradient(45deg, #FCFCFC, #C6D2FF);
-    color: #252730;
+    color: #252730;*/
+    background: linear-gradient(
+        50deg,
+        rgba(255, 255, 255, 0.4) 12%,
+        rgba(255, 255, 255, 0.1) 77%
+      );
+      
+      box-shadow: 0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      
 
     resize: none;
     margin-top: 1em;
     padding: 1.5em;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: 3px solid #ffffff;
     outline: none;
     font-weight: 500;
     font-size: 24px;
@@ -81,17 +144,26 @@ body{
     height: 10em;
                   
 }   
-.txtarea_ingreso {
-    box-shadow: 0 3px 0 0 #b7c3d1, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
-    background-color: #E6EAEF;
-    background-image: linear-gradient(-45deg, #FCFCFC, #C6D2FF);
-    color: #252730;
+.txtarea_ingreso::placeholder{color: #252730;}
 
+.txtarea_ingreso {
+    background: linear-gradient(
+    50deg,
+    rgba(255, 255, 255, 0.4) 12%,
+    rgba(255, 255, 255, 0.1) 77%
+  );
+  box-shadow: 0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset;
+
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  
     resize: none;
     margin-top: 1em;
     padding: 1.5em;
     border-radius: 10px;
-    border: 2px solid transparent;
+    border: 3px solid #ffffff;
     outline: none;
     font-weight: 500;
     font-size: 24px;
@@ -101,19 +173,29 @@ body{
                   
 }   
 
-.textartxtarea_ingreso:hover{
-    box-shadow: 0 3px 0 0 #b7c3d1, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset;
-}
 main{
     display: block;
-
+    
 }
 footer{
     
+    border-top: 2px solid #ffffff;
     height: 10em;
-    background-color: black;
     display: flex;
+    background-image: url("../img/bg-pie.jpg");
+    background-repeat: repeat;
+    text-align: center;
+
+    box-shadow: 0px -10px 19px -7px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px -10px 19px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px -10px 19px -7px rgba(0,0,0,0.5);
+
 }
+
+#img-foot img{
+    width: 80%;
+}
+
 #pie{
     margin: auto;
     
@@ -149,6 +231,17 @@ footer{
     }
     #contenedor_texto_encriptado{
         margin-left: 0;
+        margin-top: 3em;
+    }
+    #texto_banner p {
+        width: 100%;
+      }
+
+      #encabezado{
+        font-size: 2em;
+    }
+    #img-foot img{
+        width: 100%;
     }
     
 }
@@ -159,11 +252,15 @@ footer{
     }
     #contenedor_texto_encriptado{
         margin-left: 0;
+        margin-top: 2em;
+
     }
     #contenedor_texto_encriptado, #contenedor_acciones{
         display:block;
     }
-
+    #texto_banner p {
+        width: 50%;
+      }
 
 }
 /* Medium devices (landscape tablets, 768px and up) */
